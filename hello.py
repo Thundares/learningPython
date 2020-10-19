@@ -34,7 +34,30 @@ else:
 
 #loop
 print('\nTime to loop')
-index = 1
-for x in range(a):
-    print('{i} * b == {bb}'.format(i = index, bb = b * index))
-    index += 1
+for x in range(0,11):
+    print('{i} * b == {bb}'.format(i = x, bb = b * x))
+
+#list
+listOne = [1,3,5,7,11,13,17,19]
+print(listOne)
+print('Position 2 = {}'.format(listOne[1]))
+print('Position 5 = {}'.format(listOne[4]))
+print('Max of list = {}'.format(max(listOne)))
+print('Length of list = {}'.format(len(listOne)))
+
+#method
+def printTitle(text1):
+    print('##########\n\n{}\n\n##########'.format(text1))
+printTitle('Hello, Python')
+
+#class
+class FirstClass:
+    def __init__(self):
+        self.a = 50
+        self.b = 80
+
+    def whatDoesItContains(self):
+        print('a = {}\nb = {}'.format(self.a, self.b))
+
+usingClass = FirstClass()
+usingClass.whatDoesItContains()
